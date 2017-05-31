@@ -11,11 +11,11 @@ GEM
     capistrano-bundler (1.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-passenger (0.2.0)
-      capistrano (~> 3.0)
     capistrano-rbenv (2.1.1)
       capistrano (~> 3.1)
       sshkit (~> 1.3)
+    capistrano3-nginx (2.1.6)
+      capistrano (>= 3.0.0)
     i18n (0.8.1)
     minitest (5.10.2)
     net-scp (1.2.1)
@@ -45,8 +45,8 @@ PLATFORMS
 DEPENDENCIES
   capistrano (~> 3.0)
   capistrano-bundler
-  capistrano-passenger
   capistrano-rbenv
+  capistrano3-nginx
   minitest (~> 5.2)
   passenger (>= 5.0.25)
   rack-test (~> 0.6)
