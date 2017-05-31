@@ -1,0 +1,247 @@
+# Logfile created on 2017-05-30 23:55:08 +0300 by logger.rb/56815
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-30 23:55:08 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-30 23:56:19 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-30 23:58:16 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [40fba4cf] Running /usr/bin/env mkdir -p /tmp as pi@192.168.1.125
+ DEBUG [40fba4cf] Command: /usr/bin/env mkdir -p /tmp
+  INFO [40fba4cf] Finished in 4.878 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 0.0%
+  INFO Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 100.0%
+  INFO [d09147aa] Running /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh as pi@192.168.1.125
+ DEBUG [d09147aa] Command: /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh
+  INFO [d09147aa] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [4311f1f9] Running /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD as pi@192.168.1.125
+ DEBUG [4311f1f9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD )
+ DEBUG [4311f1f9] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366	HEAD
+  INFO [4311f1f9] Finished in 2.755 seconds with exit status 0 (successful).
+  INFO [c0b15f06] Running /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases as pi@192.168.1.125
+ DEBUG [c0b15f06] Command: /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases
+ DEBUG [c0b15f06] 	mkdir: cannot create directory '/var/www/home_stuff': Permission denied
+mkdir: cannot create directory '/var/www/home_stuff': Permission denied
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-31 00:01:25 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [2970d3b3] Running /usr/bin/env mkdir -p /tmp as pi@192.168.1.125
+ DEBUG [2970d3b3] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2970d3b3] Finished in 5.084 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 0.0%
+  INFO Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 100.0%
+  INFO [e807dcc7] Running /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh as pi@192.168.1.125
+ DEBUG [e807dcc7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh
+  INFO [e807dcc7] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [94aef823] Running /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD as pi@192.168.1.125
+ DEBUG [94aef823] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD )
+ DEBUG [94aef823] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366	HEAD
+  INFO [94aef823] Finished in 2.487 seconds with exit status 0 (successful).
+  INFO [e84c4287] Running /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases as pi@192.168.1.125
+ DEBUG [e84c4287] Command: /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases
+  INFO [e84c4287] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [6abeead4] Running [ -f /var/www/home_stuff/current/REVISION ] as pi@192.168.1.125
+ DEBUG [6abeead4] Command: [ -f /var/www/home_stuff/current/REVISION ]
+ DEBUG [6abeead4] Finished in 0.025 seconds with exit status 1 (failed).
+ DEBUG [569ded9e] Running [ -f /var/www/home_stuff/repo/HEAD ] as pi@192.168.1.125
+ DEBUG [569ded9e] Command: [ -f /var/www/home_stuff/repo/HEAD ]
+ DEBUG [569ded9e] Finished in 0.023 seconds with exit status 1 (failed).
+ DEBUG [3e4b7d28] Running if test ! -d /var/www/home_stuff; then echo "Directory does not exist '/var/www/home_stuff'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [3e4b7d28] Command: if test ! -d /var/www/home_stuff; then echo "Directory does not exist '/var/www/home_stuff'" 1>&2; false; fi
+ DEBUG [3e4b7d28] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [508e98d4] Running /usr/bin/env git clone --mirror git@github.com:somero/home_stuff.git /var/www/home_stuff/repo as pi@192.168.1.125
+ DEBUG [508e98d4] Command: cd /var/www/home_stuff && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git clone --mirror git@github.com:somero/home_stuff.git /var/www/home_stuff/repo )
+ DEBUG [508e98d4] 	Cloning into bare repository '/var/www/home_stuff/repo'...
+  INFO [508e98d4] Finished in 3.096 seconds with exit status 0 (successful).
+ DEBUG [7222bfa8] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [7222bfa8] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [7222bfa8] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [db4be063] Running /usr/bin/env git remote set-url origin git@github.com:somero/home_stuff.git as pi@192.168.1.125
+ DEBUG [db4be063] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git remote set-url origin git@github.com:somero/home_stuff.git )
+  INFO [db4be063] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [ca0d5213] Running /usr/bin/env git remote update --prune as pi@192.168.1.125
+ DEBUG [ca0d5213] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ca0d5213] 	Fetching origin
+  INFO [ca0d5213] Finished in 2.602 seconds with exit status 0 (successful).
+ DEBUG [dee038f2] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [dee038f2] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [dee038f2] Finished in 0.019 seconds with exit status 0 (successful).
+  INFO [ad58c9f3] Running /usr/bin/env mkdir -p /var/www/home_stuff/releases/20170530210133 as pi@192.168.1.125
+ DEBUG [ad58c9f3] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env mkdir -p /var/www/home_stuff/releases/20170530210133 )
+  INFO [ad58c9f3] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [787da3c5] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/home_stuff/releases/20170530210133 as pi@192.168.1.125
+ DEBUG [787da3c5] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/home_stuff/releases/20170530210133 )
+  INFO [787da3c5] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [d68bd1a6] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [d68bd1a6] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [d68bd1a6] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [4a2dad3a] Running /usr/bin/env git rev-list --max-count=1 master as pi@192.168.1.125
+ DEBUG [4a2dad3a] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [4a2dad3a] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366
+ DEBUG [4a2dad3a] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [32235403] Running if test ! -d /var/www/home_stuff/releases/20170530210133; then echo "Directory does not exist '/var/www/home_stuff/releases/20170530210133'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [32235403] Command: if test ! -d /var/www/home_stuff/releases/20170530210133; then echo "Directory does not exist '/var/www/home_stuff/releases/20170530210133'" 1>&2; false; fi
+ DEBUG [32235403] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO [d0aefa79] Running /usr/bin/env echo "5ce0cd6bc37ba25764fd8083a17f626f6b97a366" >> REVISION as pi@192.168.1.125
+ DEBUG [d0aefa79] Command: cd /var/www/home_stuff/releases/20170530210133 && /usr/bin/env echo "5ce0cd6bc37ba25764fd8083a17f626f6b97a366" >> REVISION
+  INFO [d0aefa79] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [31950ab3] Running /usr/bin/env ln -s /var/www/home_stuff/releases/20170530210133 /var/www/home_stuff/releases/current as pi@192.168.1.125
+ DEBUG [31950ab3] Command: /usr/bin/env ln -s /var/www/home_stuff/releases/20170530210133 /var/www/home_stuff/releases/current
+  INFO [31950ab3] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [e105f079] Running /usr/bin/env mv /var/www/home_stuff/releases/current /var/www/home_stuff as pi@192.168.1.125
+ DEBUG [e105f079] Command: /usr/bin/env mv /var/www/home_stuff/releases/current /var/www/home_stuff
+  INFO [e105f079] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [e5e415f1] Running /usr/bin/env ls -x /var/www/home_stuff/releases as pi@192.168.1.125
+ DEBUG [e5e415f1] Command: /usr/bin/env ls -x /var/www/home_stuff/releases
+ DEBUG [e5e415f1] 	20170530210133
+ DEBUG [e5e415f1] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [deed0dd9] Running if test ! -d /var/www/home_stuff/releases; then echo "Directory does not exist '/var/www/home_stuff/releases'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [deed0dd9] Command: if test ! -d /var/www/home_stuff/releases; then echo "Directory does not exist '/var/www/home_stuff/releases'" 1>&2; false; fi
+ DEBUG [deed0dd9] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO [d2e26e17] Running /usr/bin/env echo "Branch master (at 5ce0cd6bc37ba25764fd8083a17f626f6b97a366) deployed as release 20170530210133 by omerofir" >> /var/www/home_stuff/revisions.log as pi@192.168.1.125
+ DEBUG [d2e26e17] Command: cd /var/www/home_stuff/releases && /usr/bin/env echo "Branch master (at 5ce0cd6bc37ba25764fd8083a17f626f6b97a366) deployed as release 20170530210133 by omerofir" >> /var/www/home_stuff/revisions.log
+  INFO [d2e26e17] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-31 00:16:42 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1a4d7ee8] Running /usr/bin/env mkdir -p /tmp as pi@192.168.1.125
+ DEBUG [1a4d7ee8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1a4d7ee8] Finished in 5.283 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 0.0%
+  INFO Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 100.0%
+  INFO [ca7f4596] Running /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh as pi@192.168.1.125
+ DEBUG [ca7f4596] Command: /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh
+  INFO [ca7f4596] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [60118125] Running /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD as pi@192.168.1.125
+ DEBUG [60118125] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD )
+ DEBUG [60118125] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366	HEAD
+  INFO [60118125] Finished in 2.388 seconds with exit status 0 (successful).
+  INFO [8bbeb438] Running /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases as pi@192.168.1.125
+ DEBUG [8bbeb438] Command: /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases
+  INFO [8bbeb438] Finished in 0.023 seconds with exit status 0 (successful).
+ DEBUG [de3b13bc] Running [ -f /var/www/home_stuff/current/REVISION ] as pi@192.168.1.125
+ DEBUG [de3b13bc] Command: [ -f /var/www/home_stuff/current/REVISION ]
+ DEBUG [de3b13bc] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [50abbd0a] Running /usr/bin/env cat /var/www/home_stuff/current/REVISION 2>/dev/null as pi@192.168.1.125
+ DEBUG [50abbd0a] Command: /usr/bin/env cat /var/www/home_stuff/current/REVISION 2>/dev/null
+ DEBUG [50abbd0a] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366
+ DEBUG [50abbd0a] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [1807a022] Running [ -f /var/www/home_stuff/repo/HEAD ] as pi@192.168.1.125
+ DEBUG [1807a022] Command: [ -f /var/www/home_stuff/repo/HEAD ]
+ DEBUG [1807a022] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/home_stuff/repo
+ DEBUG [8dc6280a] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [8dc6280a] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [8dc6280a] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [0d859b73] Running /usr/bin/env git remote set-url origin git@github.com:somero/home_stuff.git as pi@192.168.1.125
+ DEBUG [0d859b73] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git remote set-url origin git@github.com:somero/home_stuff.git )
+  INFO [0d859b73] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [c9d14129] Running /usr/bin/env git remote update --prune as pi@192.168.1.125
+ DEBUG [c9d14129] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c9d14129] 	Fetching origin
+  INFO [c9d14129] Finished in 2.504 seconds with exit status 0 (successful).
+ DEBUG [c1a50f37] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [c1a50f37] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [c1a50f37] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [c14dcbe4] Running /usr/bin/env mkdir -p /var/www/home_stuff/releases/20170530211650 as pi@192.168.1.125
+ DEBUG [c14dcbe4] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env mkdir -p /var/www/home_stuff/releases/20170530211650 )
+  INFO [c14dcbe4] Finished in 0.028 seconds with exit status 0 (successful).
+  INFO [f396d5ba] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/home_stuff/releases/20170530211650 as pi@192.168.1.125
+ DEBUG [f396d5ba] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/home_stuff/releases/20170530211650 )
+  INFO [f396d5ba] Finished in 0.964 seconds with exit status 0 (successful).
+ DEBUG [b230371b] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [b230371b] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [b230371b] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [dc4aed99] Running /usr/bin/env git rev-list --max-count=1 master as pi@192.168.1.125
+ DEBUG [dc4aed99] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [dc4aed99] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366
+ DEBUG [dc4aed99] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [54f3a84f] Running if test ! -d /var/www/home_stuff/releases/20170530211650; then echo "Directory does not exist '/var/www/home_stuff/releases/20170530211650'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [54f3a84f] Command: if test ! -d /var/www/home_stuff/releases/20170530211650; then echo "Directory does not exist '/var/www/home_stuff/releases/20170530211650'" 1>&2; false; fi
+ DEBUG [54f3a84f] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [af4865e8] Running /usr/bin/env echo "5ce0cd6bc37ba25764fd8083a17f626f6b97a366" >> REVISION as pi@192.168.1.125
+ DEBUG [af4865e8] Command: cd /var/www/home_stuff/releases/20170530211650 && /usr/bin/env echo "5ce0cd6bc37ba25764fd8083a17f626f6b97a366" >> REVISION
+  INFO [af4865e8] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [5ce76e7e] Running if test ! -d /var/www/home_stuff/releases/20170530211650; then echo "Directory does not exist '/var/www/home_stuff/releases/20170530211650'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [5ce76e7e] Command: if test ! -d /var/www/home_stuff/releases/20170530211650; then echo "Directory does not exist '/var/www/home_stuff/releases/20170530211650'" 1>&2; false; fi
+ DEBUG [5ce76e7e] Finished in 0.024 seconds with exit status 0 (successful).
+ DEBUG [34c91160] Running /usr/bin/env bundle check --path /var/www/home_stuff/shared/bundle as pi@192.168.1.125
+ DEBUG [34c91160] Command: cd /var/www/home_stuff/releases/20170530211650 && /usr/bin/env bundle check --path /var/www/home_stuff/shared/bundle
+ DEBUG [34c91160] 	/usr/bin/env: bundle: No such file or directory
+ DEBUG [34c91160] Finished in 0.031 seconds with exit status 127 (failed).
+  INFO [818b4501] Running /usr/bin/env bundle install --path /var/www/home_stuff/shared/bundle --without development test --deployment --quiet as pi@192.168.1.125
+ DEBUG [818b4501] Command: cd /var/www/home_stuff/releases/20170530211650 && /usr/bin/env bundle install --path /var/www/home_stuff/shared/bundle --without development test --deployment --quiet
+ DEBUG [818b4501] 	/usr/bin/env: bundle: No such file or directory
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-31 11:25:20 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [edb37e09] Running /usr/bin/env mkdir -p /tmp as pi@192.168.1.125
+ DEBUG [edb37e09] Command: /usr/bin/env mkdir -p /tmp
+  INFO [edb37e09] Finished in 4.290 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 0.0%
+  INFO Uploading /tmp/git-ssh-home_stuff-production-omerofir.sh 100.0%
+  INFO [15359ace] Running /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh as pi@192.168.1.125
+ DEBUG [15359ace] Command: /usr/bin/env chmod 700 /tmp/git-ssh-home_stuff-production-omerofir.sh
+  INFO [15359ace] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO [c7c4f5ed] Running /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD as pi@192.168.1.125
+ DEBUG [c7c4f5ed] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git ls-remote git@github.com:somero/home_stuff.git HEAD )
+ DEBUG [c7c4f5ed] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366	HEAD
+  INFO [c7c4f5ed] Finished in 2.813 seconds with exit status 0 (successful).
+  INFO [6d537f7d] Running /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases as pi@192.168.1.125
+ DEBUG [6d537f7d] Command: /usr/bin/env mkdir -p /var/www/home_stuff/shared /var/www/home_stuff/releases
+  INFO [6d537f7d] Finished in 0.026 seconds with exit status 0 (successful).
+ DEBUG [a09bddba] Running [ -f /var/www/home_stuff/current/REVISION ] as pi@192.168.1.125
+ DEBUG [a09bddba] Command: [ -f /var/www/home_stuff/current/REVISION ]
+ DEBUG [a09bddba] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [f27ae23b] Running /usr/bin/env cat /var/www/home_stuff/current/REVISION 2>/dev/null as pi@192.168.1.125
+ DEBUG [f27ae23b] Command: /usr/bin/env cat /var/www/home_stuff/current/REVISION 2>/dev/null
+ DEBUG [f27ae23b] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366
+ DEBUG [f27ae23b] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [15e35b5a] Running [ -f /var/www/home_stuff/repo/HEAD ] as pi@192.168.1.125
+ DEBUG [15e35b5a] Command: [ -f /var/www/home_stuff/repo/HEAD ]
+ DEBUG [15e35b5a] Finished in 0.023 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/home_stuff/repo
+ DEBUG [6efc9445] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [6efc9445] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [6efc9445] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [23175089] Running /usr/bin/env git remote set-url origin git@github.com:somero/home_stuff.git as pi@192.168.1.125
+ DEBUG [23175089] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git remote set-url origin git@github.com:somero/home_stuff.git )
+  INFO [23175089] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [4b7c9616] Running /usr/bin/env git remote update --prune as pi@192.168.1.125
+ DEBUG [4b7c9616] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4b7c9616] 	Fetching origin
+  INFO [4b7c9616] Finished in 2.568 seconds with exit status 0 (successful).
+ DEBUG [0470234d] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [0470234d] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [0470234d] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO [d3dc487e] Running /usr/bin/env mkdir -p /var/www/home_stuff/releases/20170531082527 as pi@192.168.1.125
+ DEBUG [d3dc487e] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env mkdir -p /var/www/home_stuff/releases/20170531082527 )
+  INFO [d3dc487e] Finished in 0.028 seconds with exit status 0 (successful).
+  INFO [69566638] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/home_stuff/releases/20170531082527 as pi@192.168.1.125
+ DEBUG [69566638] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/home_stuff/releases/20170531082527 )
+  INFO [69566638] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [21c5b471] Running if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [21c5b471] Command: if test ! -d /var/www/home_stuff/repo; then echo "Directory does not exist '/var/www/home_stuff/repo'" 1>&2; false; fi
+ DEBUG [21c5b471] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [29692438] Running /usr/bin/env git rev-list --max-count=1 master as pi@192.168.1.125
+ DEBUG [29692438] Command: cd /var/www/home_stuff/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-home_stuff-production-omerofir.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [29692438] 	5ce0cd6bc37ba25764fd8083a17f626f6b97a366
+ DEBUG [29692438] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [099af53c] Running if test ! -d /var/www/home_stuff/releases/20170531082527; then echo "Directory does not exist '/var/www/home_stuff/releases/20170531082527'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [099af53c] Command: if test ! -d /var/www/home_stuff/releases/20170531082527; then echo "Directory does not exist '/var/www/home_stuff/releases/20170531082527'" 1>&2; false; fi
+ DEBUG [099af53c] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [2fda90de] Running /usr/bin/env echo "5ce0cd6bc37ba25764fd8083a17f626f6b97a366" >> REVISION as pi@192.168.1.125
+ DEBUG [2fda90de] Command: cd /var/www/home_stuff/releases/20170531082527 && /usr/bin/env echo "5ce0cd6bc37ba25764fd8083a17f626f6b97a366" >> REVISION
+  INFO [2fda90de] Finished in 0.024 seconds with exit status 0 (successful).
+ DEBUG [f69be3ec] Running if test ! -d /var/www/home_stuff/releases/20170531082527; then echo "Directory does not exist '/var/www/home_stuff/releases/20170531082527'" 1>&2; false; fi as pi@192.168.1.125
+ DEBUG [f69be3ec] Command: if test ! -d /var/www/home_stuff/releases/20170531082527; then echo "Directory does not exist '/var/www/home_stuff/releases/20170531082527'" 1>&2; false; fi
+ DEBUG [f69be3ec] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [65c074ff] Running /usr/bin/env bundle check --path /var/www/home_stuff/shared/bundle as pi@192.168.1.125
+ DEBUG [65c074ff] Command: cd /var/www/home_stuff/releases/20170531082527 && /usr/bin/env bundle check --path /var/www/home_stuff/shared/bundle
+ DEBUG [65c074ff] 	/usr/bin/env: bundle: No such file or directory
+ DEBUG [65c074ff] Finished in 0.022 seconds with exit status 127 (failed).
+  INFO [da966524] Running /usr/bin/env bundle install --path /var/www/home_stuff/shared/bundle --without development test --deployment --quiet as pi@192.168.1.125
+ DEBUG [da966524] Command: cd /var/www/home_stuff/releases/20170531082527 && /usr/bin/env bundle install --path /var/www/home_stuff/shared/bundle --without development test --deployment --quiet
+ DEBUG [da966524] 	/usr/bin/env: bundle: No such file or directory
