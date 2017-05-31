@@ -3,7 +3,7 @@ source "https://rubygems.org/"
 # App Stack
 gem "sinatra", "~> 1.4"
 gem "capistrano-bundler"
-gem "capistrano-passenger"
+gem "capistrano3-nginx"
 gem "capistrano-rbenv"
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
