@@ -6,4 +6,8 @@ class HomeStuff < Sinatra::Base
 		`node '../harmonyHubCLI/harmonyHubCli.js' -l 192.168.1.105 -d 'Electra Air conditioner' -c 'PowerToggle'`
     	erb :welcome
   	end
+
+  	get '/bla' do
+  		erb :welcome
+  	end
 end
